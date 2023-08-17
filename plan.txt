@@ -1,0 +1,10 @@
+1. Nav/Drawer for navigation
+2. Shopify for Products
+2.5 Product Main Display for recent products
+3. Cool Throwaway Footer
+4. Contact us page
+5. All Products page
+6. News Widget
+7. Socials(? if we do that ?)
+
+
