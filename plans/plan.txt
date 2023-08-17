@@ -1,4 +1,5 @@
 1. Nav/Drawer for navigation
+1.5 Clerk for Authentication?
 2. Shopify for Products
 2.5 Product Main Display for recent products
 3. Cool Throwaway Footer

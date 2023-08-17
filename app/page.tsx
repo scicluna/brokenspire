@@ -1,7 +1,13 @@
+import Hero from "@/components/server/Hero";
+import ProductsNew from "@/components/server/ProductsNew";
+import Statement from "@/components/server/Statement";
+
 export default function Home() {
   return (
-    <main>
-      <h1>Home</h1>
+    <main className="flex flex-col">
+      <Hero />
+      <Statement />
+      <ProductsNew />
     </main>
   )
 }
