@@ -12,12 +12,12 @@ export default function Modules() {
     const range = (n: number) => Array.from(Array(n).keys())
 
     return (
-        <section className="h-full w-full flex flex-col items-center p-10 min-h-[100dvh]">
-            <div className="grid grid-cols-2 gap-5 w-3/4 p-2">
+        <section className="h-full w-full flex flex-col items-center sm:p-10 py-12 min-h-[100dvh]">
+            <div className="grid sm:grid-cols-2 grid-cols-1 gap-5 sm:w-3/4 p-2">
                 {products && products.slice(PRODUCTSPERPAGE * (page - 1), PRODUCTSPERPAGE * (page)).map(product => (
                     <div className="flex flex-col h-full" key={product.id}>
                         <div className="w-full flex justify-between items-center">
-                            <h2 className="text-2xl font-bold">{product.name}</h2>
+                            <h2 className="sm:text-2xl text-lg font-bold">{product.name}</h2>
                             <p>{product.date}</p>
                         </div>
                         <div className="relative h-[50dvh] w-full hover:opacity-95">
