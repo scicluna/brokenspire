@@ -15,9 +15,9 @@ export default function Nav() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
                 </svg>
             </button>
-            <section className={`fixed top-0 left-0 h-full w-1/6 bg-stone-600 z-30 transition-all duration-300 ${drawer ? 'translate-x-none' : '-translate-x-full'}`}>
+            <section className={`fixed top-0 left-0 h-full sm:w-1/6 w-3/4 bg-stone-600 z-30 transition-all duration-200 ${drawer ? 'translate-x-none' : '-translate-x-[400%]'}`}>
                 <button className="absolute top-0 right-0 p-2" onClick={() => setDrawer(false)}>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8  hover:scale-105">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-8 h-8  hover:scale-105 hover:text-stone-400">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                     </svg>
                 </button>
