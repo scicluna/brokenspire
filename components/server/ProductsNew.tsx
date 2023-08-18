@@ -16,13 +16,13 @@ export default function ProductsNew() {
                         </div>
                         <div className="relative h-full hover:opacity-95">
                             <Link href={product.dtrpg}>
-                                <Image src={product.img} alt={'...'} fill className="object-fill" />
+                                <Image src={product.img} alt={product.name} fill className="object-fill" />
                             </Link>
                         </div>
                     </div>
                 ))}
             </div>
-            <div className="sm:w-3/4 w-full flex justify-end items-start">
+            <div className="sm:w-3/4 w-full flex justify-end items-start hover:text-stone-400 text-xl font-extrabold">
                 <Link href={'/modules?page=1'}>All Modules</Link>
             </div>
         </section>
