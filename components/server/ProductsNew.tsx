@@ -22,8 +22,8 @@ export default function ProductsNew() {
                     </div>
                 ))}
             </div>
-            <div className="w-3/4 flex justify-end items-start">
-                <Link href={'/modules'}>All Modules</Link>
+            <div className="sm:w-3/4 w-full flex justify-end items-start">
+                <Link href={'/modules?page=1'}>All Modules</Link>
             </div>
         </section>
     )
