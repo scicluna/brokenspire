@@ -1,8 +1,8 @@
 'use client'
 import { products } from "@/products/products"
 import { useSearchParams, useRouter } from 'next/navigation'
-import Image from "next/image"
 import Link from "next/link"
+import AllProducts from "@/components/server/AllProducts"
 
 export default function Modules() {
     const router = useRouter()
@@ -13,21 +13,7 @@ export default function Modules() {
 
     return (
         <section className="h-full w-full flex flex-col items-center sm:p-10 py-12 min-h-[100dvh]">
-            <div className="grid sm:grid-cols-2 grid-cols-1 gap-5 sm:w-3/4 p-2">
-                {products && products.slice(PRODUCTSPERPAGE * (page - 1), PRODUCTSPERPAGE * (page)).map(product => (
-                    <div className="flex flex-col h-full" key={product.id}>
-                        <div className="w-full flex justify-between items-center">
-                            <h2 className="sm:text-2xl text-lg font-bold">{product.name}</h2>
-                            <p>{product.date}</p>
-                        </div>
-                        <div className="relative h-[50dvh] w-full hover:opacity-95">
-                            <Link href={product.dtrpg}>
-                                <Image src={product.img} alt={product.name} fill />
-                            </Link>
-                        </div>
-                    </div>
-                ))}
-            </div>
+            <AllProducts page={page} PRODUCTSPERPAGE={PRODUCTSPERPAGE} />
             <div className="flex sm:w-3/4 justify-around p-2">
                 <div className="w-full flex justify-start items-start text-xl font-bold">
                     {page !== 1 && <button onClick={() => router.push(`/modules?page=${page - 1}`)}>Prev</button>}

@@ -14,9 +14,9 @@ export default function ProductsNew() {
                             <h2 className="text-2xl font-bold">{product.name}</h2>
                             <p>{product.date}</p>
                         </div>
-                        <div className="relative h-[50dvh] hover:opacity-95">
+                        <div className="relative h-[50dvh] hover:opacity-90">
                             <Link href={product.dtrpg} target="_blank">
-                                <Image src={product.img} alt={product.name} fill className="object-fill" />
+                                <Image src={product.img} alt={product.name} fill className="object-fill rounded-lg" />
                             </Link>
                         </div>
                     </div>

@@ -11,7 +11,7 @@ export default function Footer() {
         <footer className="flex flex-col gap-2 items-center h-96 min-h-[20%] relative bg-stone-700 text-stone-100 text-sm">
             <div className="flex h-full w-full">
                 <div className="relative sm:m-8 sm:w-1/5 w-3/5">
-                    <Image src={brokenSpireLogo} alt={'broken spire logo'} fill className="object-cover" />
+                    <Image src={brokenSpireLogo} alt={'broken spire logo'} fill className="sm:object-fill object-cover" />
                 </div>
                 <div className="flex flex-col sm:w-4/5 w-2/5 md:gap-0 gap-4">
                     <div className="grid md:grid-cols-3 md:grid-rows-2 grid-cols-1 h-16 m-10 sm:text-2xl">
