@@ -14,7 +14,7 @@ export default function Footer() {
                     <Image src={brokenSpireLogo} alt={'broken spire logo'} fill className="sm:object-fill object-cover" />
                 </div>
                 <div className="flex flex-col sm:w-4/5 w-2/5 md:gap-0 gap-4">
-                    <div className="grid md:grid-cols-3 md:grid-rows-2 grid-cols-1 h-16 m-10 sm:text-2xl">
+                    <div className="grid md:grid-cols-4 md:grid-rows-2 grid-cols-1 h-16 m-10 sm:text-2xl">
                         <Hoverlinks />
                     </div>
                     <div className="flex flex-col items-start">
