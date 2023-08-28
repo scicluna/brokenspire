@@ -16,9 +16,9 @@ export default function AllProducts({ PRODUCTSPERPAGE, page }: AllProductsProps)
                         <h2 className="sm:text-2xl text-lg font-bold">{product.name}</h2>
                         <p>{product.date}</p>
                     </div>
-                    <div className="relative h-[50dvh] w-full hover:opacity-90">
+                    <div className="relative h-[50dvh] w-full hover:opacity-90 overflow-hidden">
                         <Link href={product.dtrpg}>
-                            <Image src={product.img} alt={product.name} fill className="rounded-lg" />
+                            <Image src={product.img} alt={product.name} fill className="rounded-lg hover:scale-110 transition-all duration-300" />
                         </Link>
                     </div>
                 </div>

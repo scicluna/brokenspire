@@ -13,6 +13,10 @@ export default function Modules() {
 
     return (
         <section className="h-full w-full flex flex-col items-center sm:p-10 py-12 min-h-[100dvh]">
+            <div className="flex sm:w-full sm:pl-20">
+                <h1 className="text-3xl font-extrabold">All Modules</h1>
+            </div>
+
             <AllProducts page={page} PRODUCTSPERPAGE={PRODUCTSPERPAGE} />
             <div className="flex sm:w-3/4 justify-around p-2">
                 <div className="w-full flex justify-start items-start text-xl font-bold">

@@ -1,6 +1,9 @@
 export default function Contact() {
     return (
-        <section className="min-h-[100dvh] flex justify-center items-center">
+        <section className="h-full w-full flex flex-col items-center sm:p-10 py-12 min-h-[100dvh] gap-20">
+            <div className="flex sm:w-full sm:pl-20">
+                <h1 className="text-3xl font-extrabold">Contact</h1>
+            </div>
             <form
                 className="flex flex-col justify-center border sm:w-1/2 w-full h-fit border-stone-200 p-5 rounded-lg bg-stone-800 dark:bg-stone-950 gap-4 text-stone-300 dark:text-stone-400"
                 action="https://formsubmit.co/sciclunajl@gmail.com"
