@@ -16,11 +16,10 @@ export default function Modules() {
             <div className="flex sm:w-full sm:pl-20">
                 <h1 className="text-3xl font-extrabold">All Modules</h1>
             </div>
-
             <AllProducts page={page} PRODUCTSPERPAGE={PRODUCTSPERPAGE} />
             <div className="flex sm:w-3/4 justify-around p-2">
                 <div className="w-full flex justify-start items-start text-xl font-bold">
-                    {page !== 1 && <button onClick={() => router.push(`/modules?page=${page - 1}`)}>Prev</button>}
+                    {page !== 1 && <Link href={`/modules?page=${page - 1}`}>Prev</Link>}
                 </div>
                 <div className="flex gap-2 text-xl font-bold">
                     {range(Math.ceil(products.length / PRODUCTSPERPAGE)).map((_, i) => (
@@ -30,7 +29,7 @@ export default function Modules() {
                     ))}
                 </div>
                 <div className=" w-full flex justify-end items-start text-xl font-bold">
-                    {PRODUCTSPERPAGE * page < products.length && <button onClick={() => router.push(`/modules?page=${page + 1}`)}>Next</button>}
+                    {PRODUCTSPERPAGE * page < products.length && <Link href={`/modules?page=${page + 1}`}>Prev</Link>}
                 </div>
             </div>
         </section>
